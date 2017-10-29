@@ -1,0 +1,317 @@
+html{
+  box-sizing: border-box
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: inherit
+}
+
+img{
+  max-width: 100%
+  height: auto
+}
+
+html{
+  position: relative
+  min-width: 960px
+  min-height: 100%
+}
+
+.page{
+  font-family: 'ubuntu-light', Arial, sans-serif
+  font-size: 16px
+  line-height: 1.6
+  -webkit-font-smoothing: antialiased
+  color: $foreground-color
+  background: $background-color
+  overflow: hidden
+  height: 100%
+}
+.wrapper{
+  overflow: hidden
+}
+.container{
+  width: 960px
+  margin: 0 auto
+  padding: 0 10px
+  +clearfix
+}
+.section{
+  height: 100vh
+  min-height: 650px
+}
+.section-title{
+  font-family: 'gagalin', Arial, sans-serif
+  font-size: 72px
+  line-height: 1
+  color: $accent-color
+}
+  &--black{
+      color: $foreground-color
+  }
+  &--white{
+      color: #fff
+  }
+/*Do*/
+
+.do{
+    position: relative
+  background: rgba(0, 0, 0, 0.7) url(../img/bg-pattern.png) center
+  // background: url(../img/hello_bg.jpg) no-repeat center
+  // background-size: cover
+}
+
+
+  &__inner{
+      position: absolute
+      top: 50%
+      left: 0
+      right: 0
+      transform: translateY(-50%)
+  }
+  &__left{
+      float: left
+      width: 460px
+      margin-top: -72px
+  }
+  &__right{
+      float: right
+      width: 460px
+      padding-top: 71px
+  }
+  &__title{
+      margin-bottom: 24px
+  }
+  &__desc{
+      font-family: 'lifehack-medium', Arial, sans-serif
+      font-size: 63px
+      line-height: 60px
+      color: #fff
+      text-transform: lowercase
+  }
+
+
+// Header
+.header{
+  position: relative
+  +clearfix
+}
+  &__logo{
+      float: left
+      padding-top: 12px
+  }
+  &__nav{
+      float: right
+      padding-top: 28px
+      text-align: right
+  }
+// Logo
+.logo{
+  display: block
+  width: 92px
+  height: 69px
+}
+  svg{
+      width: 100%
+      height: 100%
+  }
+// Nav
+.nav{
+  display: inline-block
+  vertical-align: middle
+}
+  &__list{
+      margin: 0
+      padding: 0
+      list-style: none
+  }
+  &__item{
+      display: inline-block
+      margin-left: 14px
+      white-space: nowrap
+      line-height: 1
+  }
+    &:first-child:before,
+    &:last-child:before
+      display: none
+
+    &:before{
+          content: ''
+          display: inline-block
+          vertical-align: middle
+          width: 4px
+          height: 4px
+          border-radius: 50%
+          background: #fff
+          margin-right: 14px
+    }
+  &__link{
+      display: inline-block
+      color: #fff
+      font-family: 'ubuntu-medium', Arial, sans-serif
+      font-size: 13px
+      text-transform: uppercase
+      text-decoration: none
+      vertical-align: middle
+  }
+    &:hover{
+          text-decoration: underline
+    }
+    &.btn:hover{
+          text-decoration: none
+    }
+.arrow-down{
+  position: absolute
+  left: 50%
+  bottom: 20px
+  display: block
+  width: 60px
+  height: 60px
+  margin-left: -30px
+}
+  &:hover svg{
+      width: 35px
+      height: 35px
+      margin-top: -15px
+  }
+  svg{
+      position: absolute
+      top: 50%
+      left: 50%
+      display: block
+      width: 30px
+      height: 30px
+      transform: translate(-50%, -50%)
+      transition: .3s ease-out
+  }
+.fixed-menu{
+  position: fixed
+  top: 90px
+  right: 40px
+  margin: 0
+  padding: 0
+  list-style: none
+}
+  &__item{
+      margin-bottom: 5px
+  }
+    &.is-active .fixed-menu__link:after
+      width: 16px
+      height: 16px
+
+  &__link{
+      position: relative
+      display: block
+      width: 16px
+      height: 16px
+  }
+    &:hover:after{
+          width: 16px
+          height: 16px
+        }
+
+    &:before{
+          content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          display: block
+          width: 6px
+          height: 6px
+          background: #fff
+          border-radius: 50%
+          transform: translate(-50%, -50%)
+    }
+    &:after{
+          content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          display: block
+          width: 6px
+          height: 6px
+          border: 1px solid #fff
+          border-radius: 50%
+          transform: translate(-50%, -50%)
+          transition: .2s ease-out
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.we-do{
+  background-image: url(../img/first-screen.png) center center no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover; 
+  min-width: 970px;
+  min-height: 650px;
+}
+
+/*
+.menu{
+  text-decoration: none;
+  display: inline-block;
+}*/
+/*
+.menu-item{
+  display: inline-block;
+
+/*
+.burger{
+  background-image: url(../img/steam.png);
+}
+
+.burger-item{
+  background-image: url(../img/drops.png);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
