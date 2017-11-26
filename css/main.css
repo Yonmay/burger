@@ -127,6 +127,15 @@ section {
   min-height: 650px;
 }
 
+@media screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+  .do__right {
+    display: none;
+  }
+}
+
 .header{
   width: 100%;
   align-items: center;
@@ -377,7 +386,7 @@ section {
 
 
 .best__text{
-  font-size: 14px;
+  font-size: 1rem;
   font-family: "Ubuntu";
   color: rgba(47, 50, 52, 0.8);
   line-height: 1.714;
@@ -409,12 +418,6 @@ section {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) 
-.reviews__item {
-    width: 50%;
-    height: 25%;
-    padding: 2.1875rem 3.4375rem 1.25rem 3.4375rem;
-}
 
 .review{
   width: 100%;
@@ -1108,3 +1111,77 @@ section {
 
 
 
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .do__right {
+    display: block;
+    margin-left: 65px;
+  }
+  .do__text {
+    display: inline-flex;
+  }
+  .do__left {
+    margin-left: 30px;
+    margin-top: -50px;
+  }
+  .best__item {
+    display: table-cell;
+
+  }
+  .slider__pic {
+    display: block;
+  }
+  .slider__info {
+    display: block;
+  }
+ .team__right {
+    text-align: center; 
+    width: 100%;
+  }
+  .team__item{
+    display: inline-block;
+  }
+  .team__link:after {
+    margin-left: 180px;
+  }
+  .team__img {
+    float: none;
+    display: flex;
+    margin-left: 68px;
+  }
+  .reviews__item {
+    width: 50%;
+    height: 25%;
+  }
+  .social {
+    margin-right: 465px;
+  }
+  .footer__left {
+    margin-top: 10px;
+  }
+  .form__col {
+    float: none;
+  }
+} 
+
+
+
+  
+
+
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  html, body {
+    font-size: 12px;
+  }
+}
