@@ -1161,6 +1161,10 @@ section {
   .footer__left {
     margin-top: 10px;
   }
+  .form__name {
+    display: table-caption;
+    margin-left: 100px;
+  }
   .form__col {
     float: none;
   }
